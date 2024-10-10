@@ -31,10 +31,17 @@ public class Method {
         System.out.println(" Unique false combination for OR: " + (false || false));
         System.out.println(" NOT false: " + (!false));
     }
+    public static String myCustomMessage(String customName){
+        return "HI! " + customName + "This is your custom message";
+    }
+
 
     public static void main(String[] args) {
         logicOperators();
         int arithResult = aritmeticOperators();
         System.out.println("Arithmetic result: " + arithResult);
+        String name = "Adrian";
+        System.out.println(myCustomMessage(name));
+        System.out.println(myCustomMessage("Adrian"));
     }
 }
