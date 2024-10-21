@@ -37,4 +37,23 @@ public class Item {
     public String getDetails(){
         return "Tittle: " + this.tittle + ", Publication date: " + this.publicationDate + ", Checked Out: " + this.checkedOut;
     }
+
+    public void checkedOut(){
+        if (!this.checkedOut){
+            this.checkedOut = true;
+            System.out.println(this.tittle + " has been checked out. ");
+        }else {
+            System.out.println(this.tittle + " is already checked out. ");
+        }
+    }
+
+    public void returnItem(){
+        if(this.checkedOut){
+            this.checkedOut = false;
+            System.out.println(this.tittle + " has been returned. ");
+        }else{
+            System.out.println(this.tittle + " has already returned. ");
+        }
+    }
+
 }
