@@ -9,5 +9,8 @@ public class BookingSystem {
         cb.getTicketDetail();
         cb.cancelBook();
         cb.getTicketDetail();
+        FlightBooking fb = new FlightBooking("Iberia", "IBE1234");
+        fb.book(new Date(), "V72");
+        fb.getTicketDetail();
     }
 }
