@@ -17,7 +17,6 @@ public class XMLFileCreator {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
         Document document = builder.newDocument();
-
         Element root = document.createElement("computer");
         document.appendChild(root);
         Element components = document.createElement("components");
